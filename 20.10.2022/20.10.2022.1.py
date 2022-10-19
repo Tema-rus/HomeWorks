@@ -10,8 +10,6 @@ number = int(input())
 
 trd, snd, fst = number % 10, number // 10 % 10, number // 100
 
-print(f'{trd = }\n{snd = }\n{fst = }')
-
 square = number * number
 cube = (fst + snd + trd) ** 3
 
