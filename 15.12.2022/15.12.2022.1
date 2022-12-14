@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+    Number: №68
+    TODO: An = ((-1) ** n * 2 ** n)/n!, M: An < E
+"""
+e = int(input('Введите E: '))
+a = -1
+b = 2
+n = 1
+fac = 1
+
+while (an := a * b / fac) >= e:
+    print(an)
+    n += 1
+    a = -a
+    b *= n
+    fac *= n
+
+print(an)
+print(n)
